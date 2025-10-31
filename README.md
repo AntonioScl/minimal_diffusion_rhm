@@ -53,33 +53,12 @@ python main.py \
 Check `example_analysis.ipynb` to see how to load and visualize results
 
 
-## 📁 Repository Structure
-
-```
-minimal_diffusion_rhm/
-├── datasets/
-│   ├── random_hierarchy_model.py  # RHM data generation
-│   └── utils.py                   # Utility functions
-├── diffusion/
-│   ├── ddpm.py                    # DDPM implementations
-│   ├── unet.py                    # UNet architectures
-│   └── evaluate_model.py          # Evaluation metrics
-├── belief_propagation/
-│   └── bp.py                      # Belief propagation for analysis
-├── main.py                        # Main training script
-├── train_simple.py                # Training loop implementation
-├── init.py                        # Model/data initialization
-├── example_train.sh               # Example training command
-├── example_analysis.ipynb         # Analysis notebook
-└── requirements.txt               # Python dependencies
-```
-
 ## 🔑 Key Parameters
 
 ### Dataset Configuration
 - `--num_features` (v): Vocabulary size
 - `--num_classes` (n): Number of classes at top level
-- `--num_synonyms` (m): Feature multiplicity (branching factor per feature)
+- `--num_synonyms` (m): Number of rules per feature
 - `--tuple_size` (s): Number of features per branch
 - `--num_layers` (L): Hierarchy depth
 - `--train_size`: Number of training samples
