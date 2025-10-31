@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# PyTorch
+*.pt
+*.pth
+*.ckpt
+
+# Results
+results/
+*.pk
+*.pkl
+*.pickle
+
+# Jupyter
+*.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Repository specific
+logs/
+results/example_experiment2*
+results/example_experiment3*
+train_slurm.sh
